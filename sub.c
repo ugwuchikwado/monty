@@ -17,7 +17,7 @@ void _sub(stack_t **stack, unsigned int line_cnt)
 
 	if (!stack || !*stack || !((*stack)->next))
 	{
-		fprintf(stderr, "L%d: operation cannot be completed, stack too short\n", line_cnt);
+		fprintf(stderr, "L%d: can't sub, stack too short\n", line_cnt);
 		exit(EXIT_FAILURE);
 	}
 
