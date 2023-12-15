@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <ctype.h>
-#include <stdlib.h>
-#include <string.h>
 #include "monty.h"
 
 /**
@@ -17,7 +13,7 @@ void mod(stack_t **stack, unsigned int line_cnt)
 
 	if (!stack || !*stack || !((*stack)->next))
 	{
-		fprintf(stderr, "L%d: operation impossible, stack too short\n", line_cnt);
+		fprintf(stderr, "L%d: can't mod, stack too short\n", line_cnt);
 		exit(EXIT_FAILURE);
 		return;
 	}
